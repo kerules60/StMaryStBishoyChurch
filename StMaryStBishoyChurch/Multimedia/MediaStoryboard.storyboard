@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Media View Controller-->
+        <!--Multimedia-->
         <scene sceneID="NzI-ZP-Ql8">
             <objects>
                 <viewController id="EjN-OJ-EQg" customClass="MediaViewController" customModule="StMaryStBishoyChurch" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,10 +20,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JIQ-m2-uJj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Multimedia" image="multimedia" id="aqM-hz-Mm2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQE-tt-Ew8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="426" y="-302"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="multimedia" width="25" height="25"/>
+    </resources>
 </document>

@@ -10,20 +10,248 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Donate View Controller-->
+        <!--Donate-->
         <scene sceneID="mf9-rl-lS8">
             <objects>
                 <viewController id="nVP-fk-Hek" customClass="DonateViewController" customModule="StMaryStBishoyChurch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAf-QP-biA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rsQ-uq-B5n">
+                                <rect key="frame" x="0.0" y="95" width="375" height="523"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="6Il-j3-98Z"/>
+                                    <constraint firstAttribute="height" constant="523" id="DT4-s7-HGL"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="Cell" rowHeight="165" id="XW3-Th-kHk" customClass="DonateTableViewCell" customModule="StMaryStBishoyChurch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XW3-Th-kHk" id="MIr-cl-nVM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQM-Fj-UMo">
+                                                    <rect key="frame" x="15" y="32" width="375" height="56"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="FYq-db-Cdv"/>
+                                                        <constraint firstAttribute="width" constant="375" id="YyT-jL-CZc"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="dh7-ug-GZs"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVI-Uw-NIR">
+                                                    <rect key="frame" x="89" y="91" width="226" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="226" id="0jr-2Z-VID"/>
+                                                        <constraint firstAttribute="height" constant="68" id="BAT-Li-HHM"/>
+                                                    </constraints>
+                                                    <state key="normal" image="PPDonate"/>
+                                                    <connections>
+                                                        <action selector="PPDonateButton:" destination="nVP-fk-Hek" eventType="touchUpInside" id="GLF-aq-Sxs"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-RM-uxL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="jpU-Ai-jkN"/>
+                                                        <constraint firstAttribute="width" constant="375" id="tL3-Si-3Ld"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5B8-RM-uxL" firstAttribute="leading" secondItem="MIr-cl-nVM" secondAttribute="leading" id="6AN-ok-pQI"/>
+                                                <constraint firstItem="mVI-Uw-NIR" firstAttribute="top" secondItem="SQM-Fj-UMo" secondAttribute="bottom" constant="5.5" id="6Ko-6g-a5S"/>
+                                                <constraint firstAttribute="trailing" secondItem="mVI-Uw-NIR" secondAttribute="trailing" constant="60" id="IBl-hd-lsn"/>
+                                                <constraint firstAttribute="bottom" secondItem="mVI-Uw-NIR" secondAttribute="bottom" constant="5.5" id="KeI-oo-Za3"/>
+                                                <constraint firstItem="mVI-Uw-NIR" firstAttribute="top" secondItem="SQM-Fj-UMo" secondAttribute="bottom" constant="3" id="NRX-Y8-Se4"/>
+                                                <constraint firstAttribute="trailing" secondItem="SQM-Fj-UMo" secondAttribute="trailing" constant="15" id="QvA-xw-MXe"/>
+                                                <constraint firstItem="mVI-Uw-NIR" firstAttribute="leading" secondItem="MIr-cl-nVM" secondAttribute="leadingMargin" constant="74" id="RX3-xE-7Mz"/>
+                                                <constraint firstItem="SQM-Fj-UMo" firstAttribute="leading" secondItem="MIr-cl-nVM" secondAttribute="leading" constant="15" id="gzZ-Yj-0yb"/>
+                                                <constraint firstItem="5B8-RM-uxL" firstAttribute="top" secondItem="MIr-cl-nVM" secondAttribute="top" id="jxu-6y-qeR"/>
+                                                <constraint firstItem="SQM-Fj-UMo" firstAttribute="top" secondItem="5B8-RM-uxL" secondAttribute="bottom" constant="2" id="mbF-z0-jQG"/>
+                                                <constraint firstItem="5B8-RM-uxL" firstAttribute="top" secondItem="MIr-cl-nVM" secondAttribute="top" id="pcT-0X-1pD"/>
+                                                <constraint firstAttribute="trailing" secondItem="5B8-RM-uxL" secondAttribute="trailing" id="rzz-0w-P7f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="SQM-Fj-UMo" id="mwW-pn-8mU"/>
+                                            <outlet property="donateButton" destination="mVI-Uw-NIR" id="W1y-U4-xJM"/>
+                                            <outlet property="titleLabel" destination="5B8-RM-uxL" id="lTL-sY-SJY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="CellTwo" rowHeight="165" id="c8E-Qq-426" customClass="DonateTableViewCell" customModule="StMaryStBishoyChurch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="193" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c8E-Qq-426" id="Jpe-Qd-wZ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMP-wy-Fvm">
+                                                    <rect key="frame" x="0.0" y="8" width="375" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="375" id="dcD-C8-OuQ"/>
+                                                        <constraint firstAttribute="height" constant="20.5" id="ugy-eR-GM2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvt-aR-5KT">
+                                                    <rect key="frame" x="89" y="91" width="226" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="68" id="QH4-vZ-uhl"/>
+                                                        <constraint firstAttribute="width" constant="226" id="hx9-kL-F7q"/>
+                                                    </constraints>
+                                                    <state key="normal" image="CCDonate"/>
+                                                    <connections>
+                                                        <action selector="CCDonateButton:" destination="nVP-fk-Hek" eventType="touchUpInside" id="PVL-bo-7ob"/>
+                                                        <action selector="PPDonateButton:" destination="nVP-fk-Hek" eventType="touchUpInside" id="Bxs-jg-zAN"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwR-lt-Jch">
+                                                    <rect key="frame" x="15" y="30.5" width="375" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="CSy-Wk-rdz"/>
+                                                        <constraint firstAttribute="width" constant="375" id="X63-UB-V2b"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="oIV-1Z-8I0"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JMP-wy-Fvm" firstAttribute="leading" secondItem="Jpe-Qd-wZ4" secondAttribute="leading" id="2ep-Hn-0OM"/>
+                                                <constraint firstAttribute="trailing" secondItem="dwR-lt-Jch" secondAttribute="trailing" constant="15" id="3i3-NF-Ceu"/>
+                                                <constraint firstItem="cvt-aR-5KT" firstAttribute="top" secondItem="dwR-lt-Jch" secondAttribute="bottom" constant="8" id="5al-LK-j6S"/>
+                                                <constraint firstItem="dwR-lt-Jch" firstAttribute="leading" secondItem="Jpe-Qd-wZ4" secondAttribute="leading" constant="15" id="BXA-NA-XBj"/>
+                                                <constraint firstItem="JMP-wy-Fvm" firstAttribute="top" secondItem="Jpe-Qd-wZ4" secondAttribute="top" constant="5" id="I3I-Wz-iLo"/>
+                                                <constraint firstItem="dwR-lt-Jch" firstAttribute="top" secondItem="JMP-wy-Fvm" secondAttribute="bottom" constant="2" id="IMA-Ok-6dF"/>
+                                                <constraint firstAttribute="bottom" secondItem="cvt-aR-5KT" secondAttribute="bottom" constant="5.5" id="KxS-NN-Dei"/>
+                                                <constraint firstItem="cvt-aR-5KT" firstAttribute="leading" secondItem="Jpe-Qd-wZ4" secondAttribute="leadingMargin" constant="74" id="Pet-H6-ftV"/>
+                                                <constraint firstItem="JMP-wy-Fvm" firstAttribute="top" secondItem="Jpe-Qd-wZ4" secondAttribute="top" constant="8" id="RZR-bR-cRR"/>
+                                                <constraint firstAttribute="trailing" secondItem="cvt-aR-5KT" secondAttribute="trailing" constant="60" id="Ta1-RQ-PWM"/>
+                                                <constraint firstItem="cvt-aR-5KT" firstAttribute="top" secondItem="dwR-lt-Jch" secondAttribute="bottom" constant="5.5" id="a7E-BH-uPW"/>
+                                                <constraint firstItem="dwR-lt-Jch" firstAttribute="top" secondItem="Jpe-Qd-wZ4" secondAttribute="top" constant="44" id="csc-pZ-xgE"/>
+                                                <constraint firstAttribute="trailing" secondItem="JMP-wy-Fvm" secondAttribute="trailing" id="nWa-7g-nTY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="dwR-lt-Jch" id="i1Z-kk-9KZ"/>
+                                            <outlet property="donateButton" destination="cvt-aR-5KT" id="SgU-Ee-8XH"/>
+                                            <outlet property="titleLabel" destination="JMP-wy-Fvm" id="AcY-x4-0Hg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="CellThree" rowHeight="165" id="z2G-C5-icz" customClass="DonateTableViewCell" customModule="StMaryStBishoyChurch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="358" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z2G-C5-icz" id="ZtS-y7-PBn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-R9-nS6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.5" id="ibY-JB-SZp"/>
+                                                        <constraint firstAttribute="width" constant="375" id="jjo-m5-99o"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-xV-nyY">
+                                                    <rect key="frame" x="15" y="28.5" width="375" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="375" id="kI7-f8-A8h"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="xBF-uB-h8S"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2j-HF-5dg">
+                                                    <rect key="frame" x="89" y="54" width="226" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="e9h-Xa-amH"/>
+                                                        <constraint firstAttribute="height" constant="68" id="izG-r7-aEI"/>
+                                                        <constraint firstAttribute="width" constant="226" id="nHi-qd-66R"/>
+                                                    </constraints>
+                                                    <state key="normal" image="AmazonDonate"/>
+                                                    <connections>
+                                                        <action selector="AmazonDonate:" destination="nVP-fk-Hek" eventType="touchUpInside" id="HeU-JS-cNG"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u2j-HF-5dg" firstAttribute="leading" secondItem="ZtS-y7-PBn" secondAttribute="leadingMargin" constant="74" id="0bb-k7-qeW"/>
+                                                <constraint firstAttribute="trailing" secondItem="u2j-HF-5dg" secondAttribute="trailing" constant="60" id="4Px-QL-ZjT"/>
+                                                <constraint firstItem="kcJ-xV-nyY" firstAttribute="leading" secondItem="ZtS-y7-PBn" secondAttribute="leading" constant="15" id="5dX-4d-2ZM"/>
+                                                <constraint firstItem="kcJ-xV-nyY" firstAttribute="top" secondItem="kEi-R9-nS6" secondAttribute="bottom" constant="8" id="8c1-tA-T6g"/>
+                                                <constraint firstAttribute="bottom" secondItem="u2j-HF-5dg" secondAttribute="bottom" constant="5.5" id="Lzn-Vh-09c"/>
+                                                <constraint firstAttribute="trailing" secondItem="kEi-R9-nS6" secondAttribute="trailing" id="SvN-9b-gE8"/>
+                                                <constraint firstAttribute="trailing" secondItem="kcJ-xV-nyY" secondAttribute="trailing" constant="15" id="U5z-gk-ya9"/>
+                                                <constraint firstItem="kEi-R9-nS6" firstAttribute="leading" secondItem="ZtS-y7-PBn" secondAttribute="leading" id="dEJ-bn-oe0"/>
+                                                <constraint firstItem="u2j-HF-5dg" firstAttribute="top" secondItem="kcJ-xV-nyY" secondAttribute="bottom" constant="5" id="ljn-WJ-Dys"/>
+                                                <constraint firstItem="kEi-R9-nS6" firstAttribute="top" secondItem="ZtS-y7-PBn" secondAttribute="top" id="rTm-ie-ZvB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="kcJ-xV-nyY" id="2lH-iO-w0F"/>
+                                            <outlet property="donateButton" destination="u2j-HF-5dg" id="5kS-82-efY"/>
+                                            <outlet property="titleLabel" destination="kEi-R9-nS6" id="Lqa-Qt-4gB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nVP-fk-Hek" id="jdu-Fw-bsA"/>
+                                    <outlet property="delegate" destination="nVP-fk-Hek" id="kSI-7u-cwG"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="yIR-hK-ch2">
+                                <rect key="frame" x="0.0" y="-55" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="5bI-UO-KFF"/>
+                                    <constraint firstAttribute="height" constant="150" id="PNP-Iy-SpU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83235513829999996" green="0.83235513829999996" blue="0.83235513829999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="5EP-Mz-cx0" secondAttribute="top" constant="75" id="61o-f9-yIQ"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="top" secondItem="RAf-QP-biA" secondAttribute="top" id="9Du-Rk-5ob"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="MGI-0P-Tt0"/>
+                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="e6D-1c-Xhd"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="lqd-wb-RCI"/>
+                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="bottom" secondItem="5EP-Mz-cx0" secondAttribute="bottom" id="m4B-Ow-g0V"/>
+                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="p00-ZA-Eco"/>
+                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="yIR-hK-ch2" secondAttribute="bottom" id="ykU-IQ-WBk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5EP-Mz-cx0"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Donate" image="donate" id="EqZ-pb-P0n"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwh-kd-rzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="263" y="-47"/>
+            <point key="canvasLocation" x="261.60000000000002" y="-47.226386806596707"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AmazonDonate" width="250" height="250"/>
+        <image name="Banner" width="375" height="150"/>
+        <image name="CCDonate" width="217" height="68"/>
+        <image name="PPDonate" width="217" height="68"/>
+        <image name="donate" width="25" height="25"/>
+    </resources>
 </document>

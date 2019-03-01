@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Notifications View Controller-->
+        <!--Notifications-->
         <scene sceneID="f7j-vo-v09">
             <objects>
                 <viewController id="Jpi-mT-Irq" customClass="NotificationsViewController" customModule="StMaryStBishoyChurch" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,10 +20,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="POf-Im-JWx"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="Notifications" id="2u9-cN-T36"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2g-DS-pNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="23" y="10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Notifications" width="25" height="25"/>
+    </resources>
 </document>

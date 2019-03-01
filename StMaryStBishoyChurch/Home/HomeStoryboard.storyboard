@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="Xeh-7k-i1v">
             <objects>
                 <viewController id="N35-36-SSt" customClass="HomeViewController" customModule="StMaryStBishoyChurch" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,10 +20,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PQa-bB-V9i"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="lBq-ML-TP4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzs-iQ-DCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="26"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="25.637181409295355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home" width="25" height="25"/>
+    </resources>
 </document>
