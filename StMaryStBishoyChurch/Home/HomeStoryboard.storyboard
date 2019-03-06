@@ -17,7 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="fA7-xt-ryT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="nHi-N0-PKD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="4RG-n5-GYA"/>
+                                    <constraint firstAttribute="width" constant="375" id="qJQ-qU-Gw8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nHi-N0-PKD" firstAttribute="trailing" secondItem="PQa-bB-V9i" secondAttribute="trailing" id="8Ms-aL-HqV"/>
+                            <constraint firstItem="nHi-N0-PKD" firstAttribute="leading" secondItem="PQa-bB-V9i" secondAttribute="leading" id="PFT-bn-Cf2"/>
+                            <constraint firstItem="nHi-N0-PKD" firstAttribute="top" secondItem="fA7-xt-ryT" secondAttribute="top" id="SUn-gV-g9v"/>
+                            <constraint firstItem="nHi-N0-PKD" firstAttribute="top" secondItem="fA7-xt-ryT" secondAttribute="top" id="Tj6-0P-IAx"/>
+                            <constraint firstItem="nHi-N0-PKD" firstAttribute="trailing" secondItem="PQa-bB-V9i" secondAttribute="trailing" id="ljO-tX-UFo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQa-bB-V9i"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="lBq-ML-TP4"/>
@@ -29,6 +45,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Banner" width="375" height="150"/>
         <image name="home" width="25" height="25"/>
     </resources>
 </document>

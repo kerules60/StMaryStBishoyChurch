@@ -35,7 +35,7 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         let method1 = DonateMethods(Title: "PyaPal", content: "Donate using this link if you have a PayPal account", donateButton: donatePPButton)
-        let method2 = DonateMethods(Title: "Visa Card", content: "Donate using this link if you are using Credit/Debit Cards. NOTE: you can use this link for automatic monthly donations  ", donateButton: donateCCButton )
+        let method2 = DonateMethods(Title: "Credit Card", content: "Donate using this link if you are using Credit/Debit Cards. NOTE: you can use this link for automatic monthly donations  ", donateButton: donateCCButton )
         let method3 = DonateMethods(Title: "Amazon Smile", content: "Support our Church by using AmazonSmile. Amazon will donate 0.5% of your eligible Purchases to our church", donateButton: donateCCButton)
   
         donationMethods.append(method1)
@@ -79,7 +79,7 @@ class DonateViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @IBAction func CCDonateButton(_ sender: UIButton) {
-        if let url = URL(string: "https://www.paypal.com/donate/?token=n-7Nll2_Ae6OvcCtygsq7S_T3Uy9XSY_FdOyrvjclzjMa_BovFjzGIkCsj_PzKBqKT23Cm&country.x=US&locale.x=US") {
+        if let url = URL(string: "https://www.paypal.com/donate/?token=_z1rCiik3Gt_3TytUd0v9yIpnhsoqsaDlfEWfNe6XzokAw0SaEgqiFeLcHLtptExmNg15W&country.x=US&locale.x=US") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }

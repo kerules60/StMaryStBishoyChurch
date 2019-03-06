@@ -17,7 +17,23 @@
                     <view key="view" contentMode="scaleToFill" id="Agw-Qn-eUe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="cdH-GR-1No">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="MKM-QE-r9k"/>
+                                    <constraint firstAttribute="height" constant="80" id="WT1-Cg-gfM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="rqW-GE-uH1"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="uZh-cr-ACw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cdH-GR-1No" firstAttribute="leading" secondItem="6g6-EM-uYN" secondAttribute="leading" id="BKz-11-VNt"/>
+                            <constraint firstItem="cdH-GR-1No" firstAttribute="trailing" secondItem="6g6-EM-uYN" secondAttribute="trailing" id="LDi-ON-JAp"/>
+                            <constraint firstItem="cdH-GR-1No" firstAttribute="top" secondItem="Agw-Qn-eUe" secondAttribute="top" id="wzb-re-WHG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6g6-EM-uYN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Services" image="services" id="x5F-Ho-RNX"/>
@@ -29,6 +45,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Banner" width="375" height="150"/>
         <image name="services" width="25" height="25"/>
     </resources>
 </document>

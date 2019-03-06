@@ -62,7 +62,7 @@
                                                         <constraint firstAttribute="height" constant="30" id="jpU-Ai-jkN"/>
                                                         <constraint firstAttribute="width" constant="375" id="tL3-Si-3Ld"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -101,7 +101,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="dcD-C8-OuQ"/>
                                                         <constraint firstAttribute="height" constant="20.5" id="ugy-eR-GM2"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -165,7 +165,7 @@
                                                         <constraint firstAttribute="height" constant="20.5" id="ibY-JB-SZp"/>
                                                         <constraint firstAttribute="width" constant="375" id="jjo-m5-99o"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -219,22 +219,25 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="yIR-hK-ch2">
-                                <rect key="frame" x="0.0" y="-55" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="15" width="375" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="5bI-UO-KFF"/>
-                                    <constraint firstAttribute="height" constant="150" id="PNP-Iy-SpU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="8o7-Cm-aKS"/>
+                                    <constraint firstAttribute="height" constant="80" id="l4b-lL-TaO"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.83235513829999996" green="0.83235513829999996" blue="0.83235513829999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="yIR-hK-ch2" secondAttribute="bottom" id="1DK-G6-H8i"/>
                             <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="5EP-Mz-cx0" secondAttribute="top" constant="75" id="61o-f9-yIQ"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="top" secondItem="RAf-QP-biA" secondAttribute="top" id="9Du-Rk-5ob"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="MGI-0P-Tt0"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="Wck-g8-zGf"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="top" secondItem="RAf-QP-biA" secondAttribute="top" id="XN5-Rp-ECE"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="top" secondItem="RAf-QP-biA" secondAttribute="top" id="bX5-wn-1e3"/>
                             <constraint firstItem="rsQ-uq-B5n" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="e6D-1c-Xhd"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="lqd-wb-RCI"/>
                             <constraint firstItem="rsQ-uq-B5n" firstAttribute="bottom" secondItem="5EP-Mz-cx0" secondAttribute="bottom" id="m4B-Ow-g0V"/>
                             <constraint firstItem="rsQ-uq-B5n" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="p00-ZA-Eco"/>
+                            <constraint firstItem="yIR-hK-ch2" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="taE-4q-bYt"/>
                             <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="yIR-hK-ch2" secondAttribute="bottom" id="ykU-IQ-WBk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5EP-Mz-cx0"/>
