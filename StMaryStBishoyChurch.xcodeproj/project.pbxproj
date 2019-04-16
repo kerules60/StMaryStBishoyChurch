@@ -21,6 +21,8 @@
 		6E0619A8222367900000EB2F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0619A7222367900000EB2F /* ServicesViewController.swift */; };
 		6E0619AA2223679B0000EB2F /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0619A92223679B0000EB2F /* DonateViewController.swift */; };
 		6E0619AD22236B050000EB2F /* ServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0619AC22236B050000EB2F /* ServicesStoryboard.storyboard */; };
+		6E172073226120DD00070565 /* OnBorading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E172072226120DD00070565 /* OnBorading.storyboard */; };
+		6E1720752262606B00070565 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1720742262606B00070565 /* RoundedCornerButton.swift */; };
 		6EE7B6D022284ED800850152 /* DonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7B6CF22284ED800850152 /* DonateTableViewCell.swift */; };
 		6EE7B6D22228503500850152 /* DonateMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7B6D12228503500850152 /* DonateMethods.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		6E0619A7222367900000EB2F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		6E0619A92223679B0000EB2F /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		6E0619AC22236B050000EB2F /* ServicesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServicesStoryboard.storyboard; sourceTree = "<group>"; };
+		6E172072226120DD00070565 /* OnBorading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBorading.storyboard; sourceTree = "<group>"; };
+		6E1720742262606B00070565 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
 		6EE7B6CF22284ED800850152 /* DonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateTableViewCell.swift; sourceTree = "<group>"; };
 		6EE7B6D12228503500850152 /* DonateMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				6E061988222364960000EB2F /* Main.storyboard */,
+				6E172072226120DD00070565 /* OnBorading.storyboard */,
+				6E1720742262606B00070565 /* RoundedCornerButton.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				6E06198F222364990000EB2F /* LaunchScreen.storyboard in Resources */,
 				6E0619AD22236B050000EB2F /* ServicesStoryboard.storyboard in Resources */,
 				6E06198C222364990000EB2F /* Assets.xcassets in Resources */,
+				6E172073226120DD00070565 /* OnBorading.storyboard in Resources */,
 				6E06199C222366C90000EB2F /* HomeStoryboard.storyboard in Resources */,
 				6E0619A4222367660000EB2F /* NotificationsStoryboard.storyboard in Resources */,
 				6E06198A222364960000EB2F /* Main.storyboard in Resources */,
@@ -228,6 +235,7 @@
 				6E061985222364960000EB2F /* HomeViewController.swift in Sources */,
 				6EE7B6D22228503500850152 /* DonateMethods.swift in Sources */,
 				6E0619A8222367900000EB2F /* ServicesViewController.swift in Sources */,
+				6E1720752262606B00070565 /* RoundedCornerButton.swift in Sources */,
 				6E0619A6222367830000EB2F /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
