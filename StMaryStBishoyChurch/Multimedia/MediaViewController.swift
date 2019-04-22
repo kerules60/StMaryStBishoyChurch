@@ -17,6 +17,10 @@ class MediaViewController: UIViewController {
     }
     
     @IBAction func liveStream(_ sender: Any) {
+        
+        if let url = URL(string: "https://www.youtube.com/embed/live_stream?channel=UC-ltEB8WAuPhJJriX2GhogA") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
     
     @IBAction func churchConsecration(_ sender: Any) {
@@ -26,6 +30,9 @@ class MediaViewController: UIViewController {
     }
     
     @IBAction func photoGallery(_ sender: Any) {
+        if let url = URL(string: "https://www.flickr.com/photos/161760285@N03/albums") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
     @IBAction func channel(_ sender: Any) {
         if let url = URL(string: "https://www.youtube.com/channel/UC-ltEB8WAuPhJJriX2GhogA/videos") {

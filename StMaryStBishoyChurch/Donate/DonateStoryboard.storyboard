@@ -1,260 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nVP-fk-Hek">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgE-a8-Ivp">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Donate-->
-        <scene sceneID="mf9-rl-lS8">
+        <scene sceneID="cFX-j8-Q6E">
             <objects>
-                <viewController id="nVP-fk-Hek" customClass="DonateViewController" customModule="StMaryStBishoyChurch" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RAf-QP-biA">
+                <viewController id="tgE-a8-Ivp" userLabel="Donate" customClass="DonateViewController" customModule="StMaryStBishoyChurch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLS-WI-E5q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rsQ-uq-B5n">
-                                <rect key="frame" x="0.0" y="95" width="375" height="523"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="6Il-j3-98Z"/>
-                                    <constraint firstAttribute="height" constant="523" id="DT4-s7-HGL"/>
-                                </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="Cell" rowHeight="165" id="XW3-Th-kHk" customClass="DonateTableViewCell" customModule="StMaryStBishoyChurch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XW3-Th-kHk" id="MIr-cl-nVM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQM-Fj-UMo">
-                                                    <rect key="frame" x="15" y="32" width="375" height="56"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="FYq-db-Cdv"/>
-                                                        <constraint firstAttribute="width" constant="375" id="YyT-jL-CZc"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="dh7-ug-GZs"/>
-                                                    </constraints>
-                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVI-Uw-NIR">
-                                                    <rect key="frame" x="89" y="91" width="226" height="68"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="226" id="0jr-2Z-VID"/>
-                                                        <constraint firstAttribute="height" constant="68" id="BAT-Li-HHM"/>
-                                                    </constraints>
-                                                    <state key="normal" image="PPDonate"/>
-                                                    <connections>
-                                                        <action selector="PPDonateButton:" destination="nVP-fk-Hek" eventType="touchUpInside" id="GLF-aq-Sxs"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5B8-RM-uxL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="jpU-Ai-jkN"/>
-                                                        <constraint firstAttribute="width" constant="375" id="tL3-Si-3Ld"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="5B8-RM-uxL" firstAttribute="leading" secondItem="MIr-cl-nVM" secondAttribute="leading" id="6AN-ok-pQI"/>
-                                                <constraint firstItem="mVI-Uw-NIR" firstAttribute="top" secondItem="SQM-Fj-UMo" secondAttribute="bottom" constant="5.5" id="6Ko-6g-a5S"/>
-                                                <constraint firstAttribute="trailing" secondItem="mVI-Uw-NIR" secondAttribute="trailing" constant="60" id="IBl-hd-lsn"/>
-                                                <constraint firstAttribute="bottom" secondItem="mVI-Uw-NIR" secondAttribute="bottom" constant="5.5" id="KeI-oo-Za3"/>
-                                                <constraint firstItem="mVI-Uw-NIR" firstAttribute="top" secondItem="SQM-Fj-UMo" secondAttribute="bottom" constant="3" id="NRX-Y8-Se4"/>
-                                                <constraint firstAttribute="trailing" secondItem="SQM-Fj-UMo" secondAttribute="trailing" constant="15" id="QvA-xw-MXe"/>
-                                                <constraint firstItem="mVI-Uw-NIR" firstAttribute="leading" secondItem="MIr-cl-nVM" secondAttribute="leadingMargin" constant="74" id="RX3-xE-7Mz"/>
-                                                <constraint firstItem="SQM-Fj-UMo" firstAttribute="leading" secondItem="MIr-cl-nVM" secondAttribute="leading" constant="15" id="gzZ-Yj-0yb"/>
-                                                <constraint firstItem="5B8-RM-uxL" firstAttribute="top" secondItem="MIr-cl-nVM" secondAttribute="top" id="jxu-6y-qeR"/>
-                                                <constraint firstItem="SQM-Fj-UMo" firstAttribute="top" secondItem="5B8-RM-uxL" secondAttribute="bottom" constant="2" id="mbF-z0-jQG"/>
-                                                <constraint firstItem="5B8-RM-uxL" firstAttribute="top" secondItem="MIr-cl-nVM" secondAttribute="top" id="pcT-0X-1pD"/>
-                                                <constraint firstAttribute="trailing" secondItem="5B8-RM-uxL" secondAttribute="trailing" id="rzz-0w-P7f"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="contentLabel" destination="SQM-Fj-UMo" id="mwW-pn-8mU"/>
-                                            <outlet property="donateButton" destination="mVI-Uw-NIR" id="W1y-U4-xJM"/>
-                                            <outlet property="titleLabel" destination="5B8-RM-uxL" id="lTL-sY-SJY"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="CellTwo" rowHeight="165" id="c8E-Qq-426" customClass="DonateTableViewCell" customModule="StMaryStBishoyChurch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="193" width="375" height="165"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c8E-Qq-426" id="Jpe-Qd-wZ4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMP-wy-Fvm">
-                                                    <rect key="frame" x="0.0" y="8" width="375" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="375" id="dcD-C8-OuQ"/>
-                                                        <constraint firstAttribute="height" constant="20.5" id="ugy-eR-GM2"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvt-aR-5KT">
-                                                    <rect key="frame" x="89" y="91" width="226" height="68"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="68" id="QH4-vZ-uhl"/>
-                                                        <constraint firstAttribute="width" constant="226" id="hx9-kL-F7q"/>
-                                                    </constraints>
-                                                    <state key="normal" image="CCDonate"/>
-                                                    <connections>
-                                                        <action selector="CCDonateButton:" destination="nVP-fk-Hek" eventType="touchUpInside" id="PVL-bo-7ob"/>
-                                                        <action selector="PPDonateButton:" destination="nVP-fk-Hek" eventType="touchUpInside" id="Bxs-jg-zAN"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwR-lt-Jch">
-                                                    <rect key="frame" x="15" y="30.5" width="375" height="55"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="CSy-Wk-rdz"/>
-                                                        <constraint firstAttribute="width" constant="375" id="X63-UB-V2b"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="oIV-1Z-8I0"/>
-                                                    </constraints>
-                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="JMP-wy-Fvm" firstAttribute="leading" secondItem="Jpe-Qd-wZ4" secondAttribute="leading" id="2ep-Hn-0OM"/>
-                                                <constraint firstAttribute="trailing" secondItem="dwR-lt-Jch" secondAttribute="trailing" constant="15" id="3i3-NF-Ceu"/>
-                                                <constraint firstItem="cvt-aR-5KT" firstAttribute="top" secondItem="dwR-lt-Jch" secondAttribute="bottom" constant="8" id="5al-LK-j6S"/>
-                                                <constraint firstItem="dwR-lt-Jch" firstAttribute="leading" secondItem="Jpe-Qd-wZ4" secondAttribute="leading" constant="15" id="BXA-NA-XBj"/>
-                                                <constraint firstItem="JMP-wy-Fvm" firstAttribute="top" secondItem="Jpe-Qd-wZ4" secondAttribute="top" constant="5" id="I3I-Wz-iLo"/>
-                                                <constraint firstItem="dwR-lt-Jch" firstAttribute="top" secondItem="JMP-wy-Fvm" secondAttribute="bottom" constant="2" id="IMA-Ok-6dF"/>
-                                                <constraint firstAttribute="bottom" secondItem="cvt-aR-5KT" secondAttribute="bottom" constant="5.5" id="KxS-NN-Dei"/>
-                                                <constraint firstItem="cvt-aR-5KT" firstAttribute="leading" secondItem="Jpe-Qd-wZ4" secondAttribute="leadingMargin" constant="74" id="Pet-H6-ftV"/>
-                                                <constraint firstItem="JMP-wy-Fvm" firstAttribute="top" secondItem="Jpe-Qd-wZ4" secondAttribute="top" constant="8" id="RZR-bR-cRR"/>
-                                                <constraint firstAttribute="trailing" secondItem="cvt-aR-5KT" secondAttribute="trailing" constant="60" id="Ta1-RQ-PWM"/>
-                                                <constraint firstItem="cvt-aR-5KT" firstAttribute="top" secondItem="dwR-lt-Jch" secondAttribute="bottom" constant="5.5" id="a7E-BH-uPW"/>
-                                                <constraint firstItem="dwR-lt-Jch" firstAttribute="top" secondItem="Jpe-Qd-wZ4" secondAttribute="top" constant="44" id="csc-pZ-xgE"/>
-                                                <constraint firstAttribute="trailing" secondItem="JMP-wy-Fvm" secondAttribute="trailing" id="nWa-7g-nTY"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="contentLabel" destination="dwR-lt-Jch" id="i1Z-kk-9KZ"/>
-                                            <outlet property="donateButton" destination="cvt-aR-5KT" id="SgU-Ee-8XH"/>
-                                            <outlet property="titleLabel" destination="JMP-wy-Fvm" id="AcY-x4-0Hg"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="40" reuseIdentifier="CellThree" rowHeight="165" id="z2G-C5-icz" customClass="DonateTableViewCell" customModule="StMaryStBishoyChurch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="358" width="375" height="165"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z2G-C5-icz" id="ZtS-y7-PBn">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-R9-nS6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20.5" id="ibY-JB-SZp"/>
-                                                        <constraint firstAttribute="width" constant="375" id="jjo-m5-99o"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-xV-nyY">
-                                                    <rect key="frame" x="15" y="28.5" width="375" height="20.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="375" id="kI7-f8-A8h"/>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="xBF-uB-h8S"/>
-                                                    </constraints>
-                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2j-HF-5dg">
-                                                    <rect key="frame" x="89" y="54" width="226" height="68"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="e9h-Xa-amH"/>
-                                                        <constraint firstAttribute="height" constant="68" id="izG-r7-aEI"/>
-                                                        <constraint firstAttribute="width" constant="226" id="nHi-qd-66R"/>
-                                                    </constraints>
-                                                    <state key="normal" image="AmazonDonate"/>
-                                                    <connections>
-                                                        <action selector="AmazonDonate:" destination="nVP-fk-Hek" eventType="touchUpInside" id="HeU-JS-cNG"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="u2j-HF-5dg" firstAttribute="leading" secondItem="ZtS-y7-PBn" secondAttribute="leadingMargin" constant="74" id="0bb-k7-qeW"/>
-                                                <constraint firstAttribute="trailing" secondItem="u2j-HF-5dg" secondAttribute="trailing" constant="60" id="4Px-QL-ZjT"/>
-                                                <constraint firstItem="kcJ-xV-nyY" firstAttribute="leading" secondItem="ZtS-y7-PBn" secondAttribute="leading" constant="15" id="5dX-4d-2ZM"/>
-                                                <constraint firstItem="kcJ-xV-nyY" firstAttribute="top" secondItem="kEi-R9-nS6" secondAttribute="bottom" constant="8" id="8c1-tA-T6g"/>
-                                                <constraint firstAttribute="bottom" secondItem="u2j-HF-5dg" secondAttribute="bottom" constant="5.5" id="Lzn-Vh-09c"/>
-                                                <constraint firstAttribute="trailing" secondItem="kEi-R9-nS6" secondAttribute="trailing" id="SvN-9b-gE8"/>
-                                                <constraint firstAttribute="trailing" secondItem="kcJ-xV-nyY" secondAttribute="trailing" constant="15" id="U5z-gk-ya9"/>
-                                                <constraint firstItem="kEi-R9-nS6" firstAttribute="leading" secondItem="ZtS-y7-PBn" secondAttribute="leading" id="dEJ-bn-oe0"/>
-                                                <constraint firstItem="u2j-HF-5dg" firstAttribute="top" secondItem="kcJ-xV-nyY" secondAttribute="bottom" constant="5" id="ljn-WJ-Dys"/>
-                                                <constraint firstItem="kEi-R9-nS6" firstAttribute="top" secondItem="ZtS-y7-PBn" secondAttribute="top" id="rTm-ie-ZvB"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="contentLabel" destination="kcJ-xV-nyY" id="2lH-iO-w0F"/>
-                                            <outlet property="donateButton" destination="u2j-HF-5dg" id="5kS-82-efY"/>
-                                            <outlet property="titleLabel" destination="kEi-R9-nS6" id="Lqa-Qt-4gB"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="nVP-fk-Hek" id="jdu-Fw-bsA"/>
-                                    <outlet property="delegate" destination="nVP-fk-Hek" id="kSI-7u-cwG"/>
-                                </connections>
-                            </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="yIR-hK-ch2">
-                                <rect key="frame" x="0.0" y="15" width="375" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="5bI-UO-KFF"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="8o7-Cm-aKS"/>
-                                    <constraint firstAttribute="height" constant="80" id="l4b-lL-TaO"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coptic-cross" translatesAutoresizingMaskIntoConstraints="NO" id="jVO-bd-FSU">
+                                <rect key="frame" x="68" y="150" width="239" height="338"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SOJ-4b-abM">
+                                <rect key="frame" x="5" y="140" width="365" height="468"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hNt-0F-21I" customClass="RoundedCornerButton" customModule="StMaryStBishoyChurch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="152.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="-217" minY="90" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="80" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Credit Card Donations. Automatic Monthly donations are also avaliable using this link" image="CCDonate">
+                                            <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="CCDonateButton:" destination="tgE-a8-Ivp" eventType="touchUpInside" id="GKg-cm-2NR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tS-0G-gLZ" customClass="RoundedCornerButton" customModule="StMaryStBishoyChurch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="157.5" width="365" height="153"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="-190" minY="21" maxX="0.0" maxY="80"/>
+                                        <inset key="imageEdgeInsets" minX="90" minY="50" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="PayPal Donations " image="paypal-donations">
+                                            <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PPDonateButton:" destination="tgE-a8-Ivp" eventType="touchUpInside" id="A8I-0m-2Oz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eeR-MM-owi" customClass="RoundedCornerButton" customModule="StMaryStBishoyChurch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="315.5" width="365" height="152.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="-200" minY="90" maxX="5" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="90" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Support our church by using Amazon Smile" image="amazonSmile">
+                                            <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="AmazonDonate:" destination="tgE-a8-Ivp" eventType="touchUpInside" id="hju-vo-PKv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="450" id="rmw-zw-11n"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y41-VT-F0k" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="-10" width="375" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="6TY-Ao-5vR" userLabel="header stack View">
+                                        <rect key="frame" x="-1" y="20" width="376" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="church-logo 100x100" translatesAutoresizingMaskIntoConstraints="NO" id="oyt-k7-Qjd">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="n1y-qE-0Sk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="St Mary and St Bishoy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADV-uk-cVa">
+                                                <rect key="frame" x="104" y="40" width="168" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="church-logo 100x100" translatesAutoresizingMaskIntoConstraints="NO" id="MRA-Qi-f7U">
+                                                <rect key="frame" x="316" y="0.0" width="60" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="Gyz-9n-wUD"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.091008908609999994" green="0.67734899400000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.96470588239999999" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6TY-Ao-5vR" secondAttribute="bottom" id="NhQ-Nf-0Aw"/>
+                                    <constraint firstAttribute="trailing" secondItem="6TY-Ao-5vR" secondAttribute="trailing" id="VeN-dA-kXo"/>
+                                    <constraint firstAttribute="height" constant="120" id="rMQ-Cr-mkc"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.83235513829999996" green="0.83235513829999996" blue="0.83235513829999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.792156862745098" green="0.89411764705882346" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="yIR-hK-ch2" secondAttribute="bottom" id="1DK-G6-H8i"/>
-                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="5EP-Mz-cx0" secondAttribute="top" constant="75" id="61o-f9-yIQ"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="Wck-g8-zGf"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="top" secondItem="RAf-QP-biA" secondAttribute="top" id="XN5-Rp-ECE"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="top" secondItem="RAf-QP-biA" secondAttribute="top" id="bX5-wn-1e3"/>
-                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="trailing" secondItem="5EP-Mz-cx0" secondAttribute="trailing" id="e6D-1c-Xhd"/>
-                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="bottom" secondItem="5EP-Mz-cx0" secondAttribute="bottom" id="m4B-Ow-g0V"/>
-                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="p00-ZA-Eco"/>
-                            <constraint firstItem="yIR-hK-ch2" firstAttribute="leading" secondItem="5EP-Mz-cx0" secondAttribute="leading" id="taE-4q-bYt"/>
-                            <constraint firstItem="rsQ-uq-B5n" firstAttribute="top" secondItem="yIR-hK-ch2" secondAttribute="bottom" id="ykU-IQ-WBk"/>
+                            <constraint firstItem="x6e-FR-6nC" firstAttribute="trailing" secondItem="SOJ-4b-abM" secondAttribute="trailing" constant="5" id="3ig-WJ-xU7"/>
+                            <constraint firstItem="x6e-FR-6nC" firstAttribute="trailing" secondItem="jVO-bd-FSU" secondAttribute="trailing" constant="68" id="8uY-oh-wde"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="trailing" secondItem="x6e-FR-6nC" secondAttribute="trailing" id="G1s-ga-3UH"/>
+                            <constraint firstItem="x6e-FR-6nC" firstAttribute="bottom" secondItem="jVO-bd-FSU" secondAttribute="bottom" constant="130" id="GgX-2b-2e5"/>
+                            <constraint firstItem="jVO-bd-FSU" firstAttribute="top" secondItem="x6e-FR-6nC" secondAttribute="top" constant="130" id="HzI-lg-X05"/>
+                            <constraint firstItem="SOJ-4b-abM" firstAttribute="top" secondItem="Y41-VT-F0k" secondAttribute="bottom" constant="30" id="JD8-SN-O7N"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="leading" secondItem="x6e-FR-6nC" secondAttribute="leading" id="KfV-VP-502"/>
+                            <constraint firstItem="jVO-bd-FSU" firstAttribute="top" secondItem="Y41-VT-F0k" secondAttribute="bottom" constant="40" id="RST-Uf-FXG"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="centerX" secondItem="jVO-bd-FSU" secondAttribute="centerX" id="fJg-zo-T8f"/>
+                            <constraint firstAttribute="trailing" secondItem="Y41-VT-F0k" secondAttribute="trailing" id="hSQ-T8-ErR"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="top" secondItem="kLS-WI-E5q" secondAttribute="top" id="ha5-1l-IdA"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="trailing" secondItem="x6e-FR-6nC" secondAttribute="trailing" id="jLw-gg-PPT"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="top" secondItem="kLS-WI-E5q" secondAttribute="top" id="lpW-1R-IyA"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="leading" secondItem="kLS-WI-E5q" secondAttribute="leading" id="q0S-Ey-OIv"/>
+                            <constraint firstItem="SOJ-4b-abM" firstAttribute="leading" secondItem="x6e-FR-6nC" secondAttribute="leading" constant="5" id="u1T-UJ-DsD"/>
+                            <constraint firstItem="x6e-FR-6nC" firstAttribute="bottom" secondItem="SOJ-4b-abM" secondAttribute="bottom" constant="10" id="uII-6m-SgN"/>
+                            <constraint firstItem="Y41-VT-F0k" firstAttribute="top" secondItem="kLS-WI-E5q" secondAttribute="top" id="uIm-1y-gPq"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="5EP-Mz-cx0"/>
+                        <viewLayoutGuide key="safeArea" id="x6e-FR-6nC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Donate" image="donate" id="EqZ-pb-P0n"/>
+                    <tabBarItem key="tabBarItem" title="Donate" image="donate" id="X0j-fZ-xX0"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwh-kd-rzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCi-UH-tmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261.60000000000002" y="-47.226386806596707"/>
+            <point key="canvasLocation" x="424.80000000000001" y="-302.6986506746627"/>
         </scene>
     </scenes>
     <resources>
-        <image name="AmazonDonate" width="250" height="250"/>
-        <image name="Banner" width="375" height="150"/>
         <image name="CCDonate" width="217" height="68"/>
-        <image name="PPDonate" width="217" height="68"/>
+        <image name="amazonSmile" width="200" height="80"/>
+        <image name="church-logo 100x100" width="100" height="100"/>
+        <image name="coptic-cross" width="225" height="224"/>
         <image name="donate" width="25" height="25"/>
+        <image name="paypal-donations" width="200" height="65"/>
     </resources>
 </document>
