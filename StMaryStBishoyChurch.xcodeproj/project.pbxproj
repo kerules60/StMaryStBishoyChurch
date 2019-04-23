@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DCEF914139B0EE7A2BDF886 /* libPods-StMaryStBishoyChurch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57C40033A82084E26B7E4A3 /* libPods-StMaryStBishoyChurch.a */; };
 		6E061983222364960000EB2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E061982222364960000EB2F /* AppDelegate.swift */; };
 		6E061987222364960000EB2F /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E061986222364960000EB2F /* MediaViewController.swift */; };
 		6E06198A222364960000EB2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E061988222364960000EB2F /* Main.storyboard */; };
@@ -21,12 +22,10 @@
 		6E0619AD22236B050000EB2F /* ServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0619AC22236B050000EB2F /* ServicesStoryboard.storyboard */; };
 		6E1720752262606B00070565 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1720742262606B00070565 /* RoundedCornerButton.swift */; };
 		6EFB28AE226A5F87007E06C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB28AD226A5F87007E06C7 /* GoogleService-Info.plist */; };
-		EBB9F9058C92E09FE1F7A283 /* Pods_StMaryStBishoyChurch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598B4B150C80074DC91AB4DC /* Pods_StMaryStBishoyChurch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003BFB692FE6C7706D6354FE /* Pods-StMaryStBishoyChurch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StMaryStBishoyChurch.debug.xcconfig"; path = "Target Support Files/Pods-StMaryStBishoyChurch/Pods-StMaryStBishoyChurch.debug.xcconfig"; sourceTree = "<group>"; };
-		598B4B150C80074DC91AB4DC /* Pods_StMaryStBishoyChurch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StMaryStBishoyChurch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E06197F222364960000EB2F /* StMaryStBishoyChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StMaryStBishoyChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E061982222364960000EB2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E061986222364960000EB2F /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		6EFB28AC226A4C0A007E06C7 /* StMaryStBishoyChurch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StMaryStBishoyChurch.entitlements; sourceTree = "<group>"; };
 		6EFB28AD226A5F87007E06C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92E4A7E92748249303D5F22A /* Pods-StMaryStBishoyChurch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StMaryStBishoyChurch.release.xcconfig"; path = "Target Support Files/Pods-StMaryStBishoyChurch/Pods-StMaryStBishoyChurch.release.xcconfig"; sourceTree = "<group>"; };
+		C57C40033A82084E26B7E4A3 /* libPods-StMaryStBishoyChurch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StMaryStBishoyChurch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB9F9058C92E09FE1F7A283 /* Pods_StMaryStBishoyChurch.framework in Frameworks */,
+				1DCEF914139B0EE7A2BDF886 /* libPods-StMaryStBishoyChurch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		2F0772C07D4E2B941A652CB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				598B4B150C80074DC91AB4DC /* Pods_StMaryStBishoyChurch.framework */,
+				C57C40033A82084E26B7E4A3 /* libPods-StMaryStBishoyChurch.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,7 +168,6 @@
 				6E06197B222364960000EB2F /* Sources */,
 				6E06197C222364960000EB2F /* Frameworks */,
 				6E06197D222364960000EB2F /* Resources */,
-				CD0E2383BE5C8831F565F27D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,32 +258,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD0E2383BE5C8831F565F27D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StMaryStBishoyChurch/Pods-StMaryStBishoyChurch-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StMaryStBishoyChurch/Pods-StMaryStBishoyChurch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
