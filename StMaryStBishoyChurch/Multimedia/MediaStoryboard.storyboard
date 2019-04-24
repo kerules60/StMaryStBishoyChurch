@@ -84,7 +84,7 @@
                                         <rect key="frame" x="158" y="0.0" width="138" height="378"/>
                                         <subviews>
                                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxp-XZ-GWS" customClass="RoundedCornerButton" customModule="StMaryStBishoyChurch" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="138" height="112.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="179"/>
                                                 <color key="backgroundColor" red="0.72941176470588232" green="0.74509803921568629" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="138" id="J5a-7l-aCu"/>
@@ -99,7 +99,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ygj-JI-ijI" customClass="RoundedCornerButton" customModule="StMaryStBishoyChurch" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="132.5" width="138" height="113"/>
+                                                <rect key="frame" x="0.0" y="199" width="138" height="179"/>
                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.96470588239999999" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="titleEdgeInsets" minX="-25" minY="80" maxX="20" maxY="0.0"/>
@@ -109,21 +109,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="churchOpening:" destination="EjN-OJ-EQg" eventType="touchUpInside" id="KlL-2u-N57"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqB-S3-Nde" customClass="RoundedCornerButton" customModule="StMaryStBishoyChurch" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="265.5" width="138" height="112.5"/>
-                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="138" id="Lko-5n-hKk"/>
-                                                </constraints>
-                                                <inset key="titleEdgeInsets" minX="-25" minY="80" maxX="20" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="45" minY="20" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="Articles" image="article">
-                                                    <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="articles:" destination="EjN-OJ-EQg" eventType="touchUpInside" id="QDs-ay-BCf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -192,7 +177,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="article" width="50" height="50"/>
         <image name="channel" width="50" height="50"/>
         <image name="church-logo 100x100" width="100" height="100"/>
         <image name="consecration" width="50" height="61"/>

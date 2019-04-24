@@ -14,11 +14,7 @@
 		6E06198F222364990000EB2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E06198D222364990000EB2F /* LaunchScreen.storyboard */; };
 		6E06199E222367320000EB2F /* MediaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E06199D222367320000EB2F /* MediaStoryboard.storyboard */; };
 		6E0619A0222367440000EB2F /* DonateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E06199F222367440000EB2F /* DonateStoryboard.storyboard */; };
-		6E0619A4222367660000EB2F /* NotificationsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0619A3222367660000EB2F /* NotificationsStoryboard.storyboard */; };
-		6E0619A6222367830000EB2F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0619A5222367830000EB2F /* NotificationsViewController.swift */; };
-		6E0619A8222367900000EB2F /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0619A7222367900000EB2F /* ServicesViewController.swift */; };
 		6E0619AA2223679B0000EB2F /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0619A92223679B0000EB2F /* DonateViewController.swift */; };
-		6E0619AD22236B050000EB2F /* ServicesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0619AC22236B050000EB2F /* ServicesStoryboard.storyboard */; };
 		6E1720752262606B00070565 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1720742262606B00070565 /* RoundedCornerButton.swift */; };
 		6EFB28AE226A5F87007E06C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB28AD226A5F87007E06C7 /* GoogleService-Info.plist */; };
 		EBB9F9058C92E09FE1F7A283 /* Pods_StMaryStBishoyChurch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 598B4B150C80074DC91AB4DC /* Pods_StMaryStBishoyChurch.framework */; };
@@ -36,11 +32,7 @@
 		6E061990222364990000EB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E06199D222367320000EB2F /* MediaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediaStoryboard.storyboard; sourceTree = "<group>"; };
 		6E06199F222367440000EB2F /* DonateStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DonateStoryboard.storyboard; sourceTree = "<group>"; };
-		6E0619A3222367660000EB2F /* NotificationsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationsStoryboard.storyboard; sourceTree = "<group>"; };
-		6E0619A5222367830000EB2F /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		6E0619A7222367900000EB2F /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		6E0619A92223679B0000EB2F /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
-		6E0619AC22236B050000EB2F /* ServicesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServicesStoryboard.storyboard; sourceTree = "<group>"; };
 		6E1720742262606B00070565 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
 		6EFB28AC226A4C0A007E06C7 /* StMaryStBishoyChurch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StMaryStBishoyChurch.entitlements; sourceTree = "<group>"; };
 		6EFB28AD226A5F87007E06C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -91,8 +83,6 @@
 			children = (
 				6EFB28AC226A4C0A007E06C7 /* StMaryStBishoyChurch.entitlements */,
 				6E0619AB2223691E0000EB2F /* Navigation */,
-				6E06199A2223661B0000EB2F /* Notifications */,
-				6E061999222366070000EB2F /* Services */,
 				6E061998222365FA0000EB2F /* Donate */,
 				6E061997222365E90000EB2F /* Multimedia */,
 				6E061982222364960000EB2F /* AppDelegate.swift */,
@@ -119,24 +109,6 @@
 				6E0619A92223679B0000EB2F /* DonateViewController.swift */,
 			);
 			path = Donate;
-			sourceTree = "<group>";
-		};
-		6E061999222366070000EB2F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				6E0619A7222367900000EB2F /* ServicesViewController.swift */,
-				6E0619AC22236B050000EB2F /* ServicesStoryboard.storyboard */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		6E06199A2223661B0000EB2F /* Notifications */ = {
-			isa = PBXGroup;
-			children = (
-				6E0619A3222367660000EB2F /* NotificationsStoryboard.storyboard */,
-				6E0619A5222367830000EB2F /* NotificationsViewController.swift */,
-			);
-			path = Notifications;
 			sourceTree = "<group>";
 		};
 		6E0619AB2223691E0000EB2F /* Navigation */ = {
@@ -226,10 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E06198F222364990000EB2F /* LaunchScreen.storyboard in Resources */,
-				6E0619AD22236B050000EB2F /* ServicesStoryboard.storyboard in Resources */,
 				6EFB28AE226A5F87007E06C7 /* GoogleService-Info.plist in Resources */,
 				6E06198C222364990000EB2F /* Assets.xcassets in Resources */,
-				6E0619A4222367660000EB2F /* NotificationsStoryboard.storyboard in Resources */,
 				6E06198A222364960000EB2F /* Main.storyboard in Resources */,
 				6E0619A0222367440000EB2F /* DonateStoryboard.storyboard in Resources */,
 				6E06199E222367320000EB2F /* MediaStoryboard.storyboard in Resources */,
@@ -297,9 +267,7 @@
 				6E061987222364960000EB2F /* MediaViewController.swift in Sources */,
 				6E0619AA2223679B0000EB2F /* DonateViewController.swift in Sources */,
 				6E061983222364960000EB2F /* AppDelegate.swift in Sources */,
-				6E0619A8222367900000EB2F /* ServicesViewController.swift in Sources */,
 				6E1720752262606B00070565 /* RoundedCornerButton.swift in Sources */,
-				6E0619A6222367830000EB2F /* NotificationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
