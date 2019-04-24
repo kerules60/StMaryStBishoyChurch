@@ -46,6 +46,9 @@ class MediaViewController: UIViewController {
         }
     }
     @IBAction func articles(_ sender: Any) {
+        if let url = URL(string: "http://www.stmarystbishoy.org/index.php/articles") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 }
 
